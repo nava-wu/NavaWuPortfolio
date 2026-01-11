@@ -2,6 +2,8 @@
 
 A portfolio to show my personal and professional projects, completed during my firmware development career and during my time at the University of Waterloo.
 
+***NOTE: This Portfolio is a work-in-progress. Please refer to NavaWu_PortFolio.pdf for my full portfolio until it is complete.***
+
 ## Tech Stack
 
 - **HTML5**: Semantic markup and structure
