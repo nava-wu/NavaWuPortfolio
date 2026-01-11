@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nava Wu - Mechatronics Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
+                    <text x="50%" y="50%" text-anchor="middle" dy=".35em" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="20">NW</text>
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Nava Wu</span>
+            </div>
+            <ul>
+                <li><a href="#" onclick="showPage('landing')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About Me</a></li>
+                <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+                <li><a href="#" onclick="showPage('work')">Work Experience</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <div id="landing" class="page active">
+        <div class="hero">
+            <h1>Nava Wu</h1>
+            <p>Mechatronics Engineer | Embedded Systems Enthusiast | Builder of Things</p>
+            <div class="hero-tags">
+                <span class="tag">C/C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">Rust</span>
+                <span class="tag">Embedded Systems</span>
+                <span class="tag">IoT</span>
+                <span class="tag">Firmware Development</span>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                I'm a Mechatronics Engineering student at the University of Waterloo with a passion for building 
+                firmware and embedded systems that solve real-world problems. From autonomous robots to IoT devices, 
+                I love bringing hardware to life through code.
+            </p>
+        </div>
+    </div>
+
+    <!-- About Me Page -->
+    <div id="about" class="page">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-section">
+                    <h3>Education</h3>
+                    <p><strong>University of Waterloo</strong></p>
+                    <p>B.A.Sc. in Mechatronics Engineering, Computing Option</p>
+                    <p>Sep 2020 - Apr 2025</p>
+                    <p style="margin-top: 1rem;"><strong>Relevant Courses:</strong></p>
+                    <p>Multi-Sensor Data Fusion, Image and Signal Processing, RTOS, Autonomous Mobile Robots</p>
+                </div>
+                <div class="about-section">
+                    <h3>Contact</h3>
+                    <p>📧 nava.wu@uwaterloo.ca</p>
+                    <p>📱 (647) 973-9327</p>
+                    <p>💼 <a href="https://www.linkedin.com/in/nava-wu/" target="_blank">LinkedIn Profile</a></p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem;">
+                <h3 style="color: #764ba2; margin-bottom: 1rem;">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">C</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Rust</div>
+                    <div class="skill-tag">SQL</div>
+                    <div class="skill-tag">MATLAB</div>
+                    <div class="skill-tag">C++</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">HTML/CSS/JS</div>
+                    <div class="skill-tag">ROS</div>
+                    <div class="skill-tag">Linux</div>
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">STM32</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: #764ba2; margin-bottom: 1rem;">When I'm Not Coding...</h3>
+                <div class="interests">
+                    <span class="interest-item">🧗 Rock Climbing</span>
+                    <span class="interest-item">🧶 Knitting</span>
+                    <span class="interest-item">🏃‍♀️ Long-Distance Running</span>
+                    <span class="interest-item">🌱 Indoor Gardening</span>
+                    <span class="interest-item">🍰 Baking Chocolate Cakes</span>
+                    <span class="interest-item">☕ Great Espresso</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Page -->
+    <div id="projects" class="page">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="showPage('project-menstrual-cup')">
+                    <h3>App-Connected Smart Menstrual Cup</h3>
+                    <p class="project-date">Sep 2024 - Mar 2025</p>
+                    <p>Custom firmware on STM32WB55 with Bluetooth connectivity to web application and Firebase real-time database integration.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">C</span>
+                        <span class="tech-badge">STM32</span>
+                        <span class="tech-badge">Bluetooth</span>
+                        <span class="tech-badge">Firebase</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Autonomous Search & Rescue Robot</h3>
+                    <p class="project-date">Jan 2024 - Apr 2024</p>
+                    <p>PID controller on STM32 for line-following robot with color and ultrasonic sensors, responding with PWM to DC motors.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">STM32</span>
+                        <span class="tech-badge">PID Control</span>
+                        <span class="tech-badge">PWM</span>
+                        <span class="tech-badge">Sensors</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Real-time OS Development</h3>
+                    <p class="project-date">May 2023 - Aug 2023</p>
+                    <p>Multithreaded operating system on Cortex M4 (STM32F401RE) with concurrent task execution and deadline avoidance strategies.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">C</span>
+                        <span class="tech-badge">RTOS</span>
+                        <span class="tech-badge">Cortex M4</span>
+                        <span class="tech-badge">Low-level Programming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience Page -->
+    <div id="work" class="page">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="work-timeline">
+                <div class="work-item">
+                    <h3>Firmware Developer</h3>
+                    <p class="work-meta">Forcen Inc. | Jul 2025 - Present</p>
+                    <ul>
+                        <li>Re-architected superloop firmware to be modular, improving development speeds for new boards and projects with communication over CAN, USB, I2C, and SPI</li>
+                        <li>Wrote drivers for Digital Potentiometer and ADC</li>
+                        <li>Created scripts to test firmware functionality</li>
+                    </ul>
+                </div>
+
+                <div class="work-item">
+                    <h3>Embedded Software Engineer</h3>
+                    <p class="work-meta">OtO Inc. | May 2024 - Aug 2024</p>
+                    <ul>
+                        <li>Researched and presented breakdown of industry-standard IoT networking protocols, leading meetings to plan switch from HTTP to MQTT, improving device message reliability and connectivity by 50%</li>
+                        <li>Designed and integrated new states for finite-state machine (FSM) in production-ready C code for ESP32 to accommodate MQTT bidirectional communication</li>
+                        <li>Conducted studies on OtO Lawn device power consumption across different 802.11 power save modes</li>
+                        <li>Built data pipelines, datastores, and visualizations using SQL, Google Dataform, BigQuery, and Looker Studio for fleet-scale metrics and firmware stability analysis</li>
+                    </ul>
+                </div>
+
+                <div class="work-item">
+                    <h3>Embedded R&D Engineer</h3>
+                    <p class="work-meta">Tesla Inc. | Jan 2023 - Apr 2023</p>
+                    <ul>
+                        <li>Designed novel motorized seatbelt retractor demonstration fixture as proof of concept for future Tesla models</li>
+                        <li>Built Arduino control box communicating over I2C and SPI to interface with supplier retractors, including component selection and connection to Tesla vehicle power and CAN networks</li>
+                    </ul>
+                </div>
+
+                <div class="work-item">
+                    <h3>Powertrain Lead - Baja SAE Design Team</h3>
+                    <p class="work-meta">University of Waterloo | Jan 2021 - May 2023</p>
+                    <ul>
+                        <li>Led team meetings, assisted in design, and set goals to meet tight deadlines prior to competition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Detail Page: Smart Menstrual Cup -->
+    <div id="project-menstrual-cup" class="page">
+        <div class="container">
+            <h2>App-Connected Smart Menstrual Cup</h2>
+            <p class="project-date" style="text-align: center;">Sep 2024 - Mar 2025</p>
+            
+            <div class="project-detail">
+                <h3>Overview</h3>
+                <p>This project aimed to create a smart menstrual cup that could communicate with a web application to provide real-time health insights. The device uses sensors to collect data and transmits it via Bluetooth to help users track their menstrual health more effectively.</p>
+
+                <h3>Technical Implementation</h3>
+                <p>The project went through multiple iterations, starting with an ESP32 Pico before transitioning to the STM32WB55 for better Bluetooth Low Energy support and lower power consumption. I wrote all firmware from scratch in C, utilizing STM32Cube tools for configuration and development.</p>
+
+                <h3>Key Challenges</h3>
+                <ul style="margin-left: 2rem; margin-top: 1rem;">
+                    <li><strong>Hardware Transition:</strong> Moving from ESP32 to STM32 required rewriting the entire firmware stack and learning the STM32 ecosystem</li>
+                    <li><strong>Bluetooth Communication:</strong> Implementing reliable BLE communication with proper service and characteristic definitions</li>
+                    <li><strong>Custom PCB Integration:</strong> Ensuring firmware worked seamlessly with custom hardware design</li>
+                    <li><strong>Real-time Database:</strong> Integrating Firebase for cloud data storage and retrieval</li>
+                </ul>
+
+                <h3>Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-badge">C</span>
+                    <span class="tech-badge">STM32WB55</span>
+                    <span class="tech-badge">STM32Cube Tools</span>
+                    <span class="tech-badge">Bluetooth Low Energy</span>
+                    <span class="tech-badge">Firebase</span>
+                    <span class="tech-badge">Web Application</span>
+                    <span class="tech-badge">Custom PCB</span>
+                </div>
+
+                <h3>Outcomes & Learning</h3>
+                <p>This project taught me the importance of reaching out to experts and iterating on designs. I owned the entire firmware development process, web application software, and database integration, which gave me end-to-end product development experience. The final product is a polished, robust solution that demonstrates my ability to bring a complex embedded system from concept to reality.</p>
+
+                <div style="margin-top: 2rem; text-align: center;">
+                    <button onclick="showPage('projects')" class="back-button">← Back to Projects</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nava Wu | Built with passion and code</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
